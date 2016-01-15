@@ -36,12 +36,6 @@ public class MyLinearLayout extends LinearLayout {
         mScroller = new Scroller(context, new LinearInterpolator(context, null));
     }
 
-    public MyLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        mContext = context;
-        mScroller = new Scroller(context, new LinearInterpolator(context, null));
-    }
-
     public void dispatchEvent(MotionEvent event) {
         int maxLength = dipToPx(mContext, MAX_WIDTH);
 
